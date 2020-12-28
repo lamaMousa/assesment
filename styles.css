@@ -186,7 +186,7 @@
 }
 
 .package_container_total_left_side .radio-custom:checked ~ .radio-custom-label {
-  background-color: #2196f3;
+  background-color: rgb(12, 117, 255);
 }
 
 .radio-custom-label:after {
@@ -250,7 +250,7 @@
 }
 
 .package_container_total_left_right p {
-  color: #3d3c3f;
+  color: rgb(48, 52, 70);
   font-size: 0.7rem;
   font-weight: 500;
   opacity: 0.6;
@@ -278,7 +278,7 @@
 }
 
 .package_container_subtotal_title p {
-  color: #3d3c3f;
+  color: rgb(48, 52, 70);
   font-size: 1rem;
   font-weight: 500;
   opacity: 0.6;
