@@ -1,0 +1,312 @@
+/* header */
+.publish_job_header {
+  text-align: center;
+}
+
+.header_main_title {
+  color: rgb(126, 129, 141);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 30px;
+  text-transform: capitalize;
+}
+
+.header_sub_title {
+  color: rgb(48, 52, 70);
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+/* container */
+.publish_job_container {
+  margin: 35px 296px 0 296px;
+}
+
+.publish_job_details {
+  display: flex;
+  height: 334px;
+  width: 783px;
+}
+
+/* navigation */
+.publish_job_navigation {
+  width: 150px;
+}
+
+.navigation_list {
+  list-style: none;
+  margin-top: 65px;
+  padding-left: 0px;
+  text-align: left;
+}
+
+.navigation_list_item::first-letter {
+  text-transform: capitalize;
+}
+
+.navigation_list_item {
+  color: rgb(151, 153, 162);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+/* basic and  package */
+.publish_job_details_basic_package {
+  display: flex;
+  width: 570px;
+}
+
+.publish_job_details_basic {
+  border: 1px solid rgb(227, 227, 227);
+  border-radius: 4px;
+  box-shadow: 3px 4px 7px rgb(246 244 244);
+  height: 315px;
+  width: 130px;
+}
+
+.basic_header {
+  margin-bottom: 18px;
+  padding: 0 2px 0 15px;
+}
+
+.basic_header_with_icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.basic_header_with_icon p {
+  color: rgb(255, 176, 24);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 8px;
+  text-transform: capitalize;
+}
+
+.basic_header_with_icon img {
+  height: 25px;
+  width: 25px;
+}
+
+.basic_header p:last-child {
+  color: rgb(48, 52, 70);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.publish_job_details_basic_status {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 18px;
+}
+
+.publish_job_details_basic_status li {
+  margin-bottom: 18px;
+}
+
+.fa-check {
+  color: rgb(12, 117, 255);
+}
+
+.fa-times {
+  color: rgb(132, 153, 178);
+}
+
+/* package */
+
+.publish_job_details_package {
+  border-radius: 4px;
+  height: 68px;
+  margin-left: 15px;
+  width: 423px;
+}
+
+.package_container {
+  border: 1px solid rgb(227, 227, 227);
+  border-radius: 5px;
+  display: flex;
+  margin-bottom: 13px;
+  width: 420px;
+  height: 68px;
+}
+.checked {
+  background-color: rgb(249, 251, 255);
+  border-color: rgb(12, 117, 255);
+}
+.package_container_total {
+  display: flex;
+  justify-content: space-between;
+  padding: 1px 12px;
+  width: 320px;
+}
+
+.package_container_total_left_side {
+  display: flex;
+  align-items: center;
+}
+
+.package_container_total_left_side {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* custom radio Hide the browser's default checkbox */
+.package_container_total_left_side .radio-custom {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  display: none;
+}
+
+/* Create a custom radio */
+.radio-custom-label {
+  border: 1px solid rgb(238, 238, 238);
+  position: absolute;
+  top: 22px;
+  left: 0;
+  height: 12px;
+  width: 12px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.package_container_total_left_side .radio-custom:checked ~ .radio-custom-label {
+  background-color: #2196f3;
+}
+
+.radio-custom-label:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.package_container_total_left_side
+  .radio-custom:checked
+  ~ .radio-custom-label:after {
+  display: block;
+}
+
+.package_container_total_left_side .radio-custom-label:after {
+  left: 4px;
+  top: 2px;
+  width: 2px;
+  height: 5px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.package_container_total_package_saving {
+  padding: 7px 2px;
+}
+
+.package_container_total_package_saving p:first-child {
+  color: rgb(12, 117, 255);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  margin-top: 0;
+}
+
+.package_container_total_package_saving p:last-child {
+  background-color: rgb(255, 167, 4, 0.4);
+  color: rgb(255, 176, 24);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 1px 7px;
+}
+
+.best_price {
+  align-items: center;
+  display: flex;
+}
+
+/* I didn't find an icon so I am used an image */
+.best_price img {
+  height: 15px;
+  width: 15px;
+}
+
+.package_container_total_left_right {
+  padding-top: 14px;
+}
+
+.package_container_total_left_right p {
+  color: #3d3c3f;
+  font-size: 0.7rem;
+  font-weight: 500;
+  opacity: 0.6;
+  margin-top: 0;
+}
+
+.package_container_total_left_right p:first-child {
+  margin-bottom: 0;
+  text-align: end;
+  text-transform: capitalize;
+}
+
+.package_container_total_left_right p:last-child {
+  text-transform: uppercase;
+}
+
+.package_container_subtotal {
+  background-color: rgb(211, 211, 211, 0.2);
+  border-left: 1px solid lightgray;
+  width: 100px;
+}
+
+.package_container_subtotal_title {
+  padding: 4px 10px;
+}
+
+.package_container_subtotal_title p {
+  color: #3d3c3f;
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.6;
+  margin-bottom: 0;
+  margin-top: 8px;
+  text-align: end;
+}
+
+.package_container_subtotal_title p:last-child {
+  font-weight: 900;
+  margin-top: 0;
+  opacity: 0.8;
+}
+
+/* footer  */
+.publish_job_footer {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.publish_job_footer button {
+  background: rgb(12, 117, 255);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  outline: none;
+  padding: 8px 48px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
